@@ -3,7 +3,7 @@ layout: default
 title: Runner
 category: Start Here
 heading: Runner
-permalink: runner/runner.html
+permalink: runner.html
 ---
 ##Introduction :
 
@@ -64,10 +64,10 @@ https://github.com/Imaginea/bot-bot/downloads
 
 	For finding the values of APP_PACKAGE & DEFAULT_ACTIVITY variables install your application on an emulator and start the application. And then watch the adb logs by typing the command *adb logcat*. And look for the following:
 
-```
+{% highlight ruby %}
 "Starting activity: Intent { act=android.intent.action.MAIN cat=android.intent.category.LAUNCHER? flg=0x10200000 cmp=com.example.android/.DefaultLauncherActivity"
+{% endhighlight %}
 
-```
 
 From the above APP_PACKAGE will be *com.example.android* and DEFAULT_ACTIVITY will be *DefaultLauncherActivity*.
 	
@@ -76,11 +76,9 @@ From the above APP_PACKAGE will be *com.example.android* and DEFAULT_ACTIVITY wi
 4. Set the tools and platform-tools folder path to your enviornment PATH. ex. "/opt/softwares/android-sdk-linux/tools" & "/opt/softwares/android-sdk-linux/platform-tools"
 5. Place your test-case csv files under a folder inside the *testcases* folder in root of the *runner*.
 6. From the command-shell go to the the *bot-bot runner* folder and type the follwing command.
-
-```bash
+{% highlight C %}
 ant
-
-```
+{% endhighlight %}
 
 ###For NativeDriver:
 
@@ -89,12 +87,12 @@ ant
 3. Copy the "server-standalone.jar" from the bot-bot/runner/lib folder to the root of the Android project inside Eclipse IDE and add it to build path.
 4. Open the AndroidManifest.xml file of your Android app and paste the following to it:
 
-```xml
-    < instrumentation android:targetPackage="{app package name}" android:name="com.google.android.testing.nativedriver.server.ServerInstrumentation" />
-    <uses-permission android:name="android.permission.INTERNET" /> 
-    < uses-permission android:name="android.permission.WAKE_LOCK" />
-    < uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-```
+{% highlight ruby %}
+< instrumentation android:targetPackage="{app package name}" android:name="com.google.android.testing.nativedriver.server.ServerInstrumentation" />
+<uses-permission android:name="android.permission.INTERNET" /> 
+< uses-permission android:name="android.permission.WAKE_LOCK" />
+< uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+{% endhighlight %}
 
 Here the {app package name} needs to be replaced with the name of the package as specified in the mainfest element's package attribute.
 
@@ -102,29 +100,29 @@ Here the {app package name} needs to be replaced with the name of the package as
 
 6. Go to the android sdk installation folder and inside it to platform-tools. Then run the following commands:
 
-```bash
+{% highlight ruby %}
 adb shell am instrument {app_package_name}/com.google.android.testing.nativedriver.server.ServerInstrumentation
-```
+{% endhighlight %}
 
-	
 Here {app_package_name} needs to be replaced with the name of the package as specified in the mainfest element's package attribute.
 	
-```bash
-	adb forward tcp:54129 tcp:54129
-```
+{% highlight ruby %}
+adb forward tcp:54129 tcp:54129
+{% endhighlight %}
 
 You can confirm that the instrumentation is started by running adb logcat and looking for a line like this:
 
-```bash
-	I/com.google.android.testing.nativedriver.server.ServerInstrumentation(  273): Jetty started on port 54129
-```
+{% highlight ruby %}
+I/com.google.android.testing.nativedriver.server.ServerInstrumentation(  273): Jetty started on port 54129
+{% endhighlight %}
 
 7. Package name and initial activity name has to be defined in the BaseClass.java file. (This will be converted to properties file going forward)
 8. Run the ant command at the root of the andro_auto_framework directory:
 
-```bash
-	ant
-```
+{% highlight ruby %}
+ant
+{% endhighlight %}
+
 This will compile your code and execute your test cases. Currently TestNG , Junit & TestNG-xslt report are generated for the test execution.
 
 

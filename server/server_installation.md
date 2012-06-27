@@ -1,51 +1,19 @@
 ---
 layout: default
-title: Server
-category: Start Here
-categories: test
-heading: Server
+title: Server Installation
+permalink: server_installation.html
+heading: Server Installation
 ---
-##Introduction:
-**Bot-bot server** is a component of bot-bot automation framework. It is used to record, store and modify the user actions taken on the android app at the user end/system.
 
-Available functionalities:
-
-- View recorded sessions
-- View recorded entries for a particular session.
-
-------------
-
-##Download
-
-You can download the latest release Server from the download section mentioned below:
-
-https://github.com/Imaginea/bot-bot/downloads
-
-The server zip contains two files one is a "bot-bot-server.war" and another is "bot-bot-server-standalone.jar". You can read read the "Deploy the war" section below on how to deploy the server using these files.
-
-
-------------
-##Build the war:
-
-To build the bot-bot-server war you need to have maven isntalled in your system. Maven can be downloaded from the ths [link](http://maven.apache.org/download.html).
-
-Once done run the following command at the root of the bot-bot/server folder
-
-```bash
- $mvn clean install
-```
-
-
-------------
-## Deploy the war
+## Deploy the downloaded war
 The war is self contained including the database. 
 
 The war can be deployed in two ways:
 
-1. As a standalone server.
+- **As a standalone server**.
 
-	To deploy the bot-bot server as a standalone server, go to the target folder under the root after running "mvn clean install".
-	You will find a file with name "bot-bot-server-standalone.jar". Run the following command in the command prompt after going to the said folder.
+To deploy the bot-bot server as a standalone server, go to the server folder under the latest download.
+You will find a file with name "bot-bot-server-standalone.jar". Run the following command in the command prompt after going to the said folder.
 
 ```bash
  java -jar bot-bot-server-standalone.jar
@@ -53,7 +21,7 @@ The war can be deployed in two ways:
 
 This will start the standalone bot-bot server. The server can be accessed using the url "http://localhost:8080/index.html".
 
-2. On an servlet supported webserver:
+- **On an servlet supported webserver**:
 
 	Bot-bot server can be deployed to any of the servlet container like *Apache Tomcat*, *Jboss*, etc.To deploy the war do the following:
 	- Create the war as mentioned in the *Build the war* section.
@@ -61,9 +29,9 @@ This will start the standalone bot-bot server. The server can be accessed using 
 	- Start your server.
 	- Access the server using the following URL
 
-	
+	```bash
 	http://&lt;localhost or systemip&gt;:&lt;port&gt;/bot-bot-server/index.html
-
+	```
 	Note: In case you are deploying the war on a servlet container server. You need update the "SERVER_NAME" under the recorder.properties file in the "recorder" section. The recorder is currently configured to record on the standalone bot-bot server deployment.
 
 ------------

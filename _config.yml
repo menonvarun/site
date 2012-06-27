@@ -1,6 +1,6 @@
 pygments: false
-markdown: redcarpet2
-source: ./content
+markdown: rdiscount
+
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 

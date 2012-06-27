@@ -69,16 +69,13 @@ padding: 20px;
   margin: 0;
 }
 .leftnav ol li {
-  padding: 0.3em 0 0.6em 1em;
+  padding: 0 0 0 1em;
   font-weight: bold; 
 }
 .leftnav ol li ol {
-  margin-top: 0.3em;
-  padding: 0.3em 0 0.9em 0.9em;
+  padding: 0 0 0 0.9em;
 }
-.leftnav ol li ol li {
-  padding: 0.3em 0 0.3em 0em;
-}
+
 .leftnav ol li a  {
   font-weight: normal;
 }
@@ -343,7 +340,7 @@ code, pre {
 }
 .highlight{
   padding: 4px;
-  width: 900px;
+
   word-wrap: break-word;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -357,6 +354,14 @@ pre {
   color: #f8f8f2;
   width: 100%;
   margin: 1px;
+  width: 890px;
+  padding: 3px;
+  word-wrap: break-word;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
   
 }
 pre code {
