@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Server
-permalink: server.html
+permalink: ./server.html
 heading: Server
 ---
 ##Introduction:

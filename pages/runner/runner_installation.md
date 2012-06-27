@@ -1,52 +1,22 @@
 ---
 layout: default
 title: Runner
-category: Start Here
-heading: Runner
-permalink: runner.html
+heading: Runner Instalaltion
+permalink: runner_installation.html
 ---
-##Introduction :
-
-As said earlier **bot-bot** is an native android automation tool. One of the componenets of the **bot-bot** is the **runner**.
-
-Runner is a test exectuion frameowrk based on keyword driven approach. The test cases needs to be defined in “csv” format. These csv files will be converted to java files and then executed using the TestNG framework.
-Runner supports 2 types of frameworks **NativeDriver** & **Robotium**. User can choose accordingly from any of the said frameworks.
-
-Runner supports following features:
-
-- Support for test-atuomation for an android application without the need of application source code.
-- Execution of the test-case csv file on the said application and generate a test report for it.
-- Users can easily add their own implementations to bot-bot and use them as keywords. Bot-bot framework will automatically identify these implementation and execute them accordingly.
-- Support for native framework functions are supported out-of-the box.
-
-It uses following open-source tools:
-
-1. [Robotium](http://code.google.com/p/robotium/)
-2. [Selenium Nativedriver](http://code.google.com/p/nativedriver/)
-3. [TestNG](http://testng.org/doc/index.html)
-
-**Note:** In case you need to use Nativedriver as your execution framework , you need to have the source code the app that needs to be tested.
-
------------
-##Download
-
-You can download the latest release recorder from the download section mentioned below:
-
-https://github.com/Imaginea/bot-bot/downloads
-
----------
 ##Pre-conditions:
 
-1. Android SDK has been installed. More info is available at [link](http://developer.android.com/sdk/installing.html)
-2. Apache ant needs to be installed.[link](http://ant.apache.org/)
-3. Install one of the android SDK platform using the Android SDK managers.
+1. Java jdk neeeds to be installed. More info is available at [link](http://java.com/en/download/index.jsp) 
+2. Android SDK has been installed. More info is available at [link](http://developer.android.com/sdk/installing.html)
+3. Apache ant 1.8.3 and higher needs to be installed.[link](http://ant.apache.org/)
+4. Install one of the android SDK platform using the Android SDK managers.
 
 ---------
 ##Installation:
 
 ###For Robotium:
 
-1. Apk file of the application taht needs to be tested.
+1. Apk file of the application that needs to be tested.
 2. Open the resources/default.properties file and change the following values:
 	- FRAMEWORK -> "robotium"
 	- TESTCASE_FOLDER -> test-case folder name under *testcase* where you have your test-cases in csv format.

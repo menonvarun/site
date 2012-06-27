@@ -17,4 +17,3 @@ Following features are supported:
 - Edit of an existing record. You can edit any existing recorde to change the command or update any other values.
 - Add a new command row. You can add new command row before or after any existing rows to modify your test-case.
 
-----------------

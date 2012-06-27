@@ -1,28 +1,14 @@
 ---
 layout: default
 title: Recorder
-category: Start Here
-heading: Recorder
+heading: Installation/Configuration
+permalink: recorder_installation.html
 ---
-##Introduction:
-As said earlier **bot-bot** is an native android automation tool. One of the components of the **bot-bot** is the **recorder**.
-
-**Recorder** is used to record user actions on the android app under test and send these actions to the **bot-bot server**.
-Recorder uses AspectJ for recording user actions.
-
------------
-##Download
-
-You can download the latest release recorder from the download section mentioned below:
-
-https://github.com/Imaginea/bot-bot/downloads
-
-----------
 ##Pre-conditions:
 
 1. Android SDK has been installed. More info is available at [link](http://developer.android.com/sdk/installing.html)
-2. Apache ant needs to be installed.[link](http://ant.apache.org/)
-3. "apk" file of an app that you want to test.
+2. Apache ant 1.8.3 or higher needs to be installed.[link](http://ant.apache.org/)
+3. "apk" file of an app for which automation needs to be done.
 
 -----------
 ##Installation:
