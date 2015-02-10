@@ -1,0 +1,10 @@
+pygments: false
+markdown: rdiscount
+baseurl: /site
+url: http://menonvarun.github.com
+latestdownload: https://github.com/downloads/Imaginea/bot-bot/bot-bot-v0.8.zip
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+
+

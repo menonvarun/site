@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    {% capture site_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bot-Bot by Imaginea</title>
+    
+    <link rel="stylesheet" href="{{ site_url }}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{ site_url }}/stylesheets/pygment_trac.css">
+    <script src="{{ site_url }}/javascripts/scale.fix.js"></script>
+    <script src="{{ site_url }}/javascripts/analytics.js"></script>	
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <div class="wrap">
+     <div id='header'>
+<span class="header1"><a href="https://github.com/Imaginea/bot-bot">Bot-Bot</a></span>
+<span class="header3"> by</span>
+<span class="header2"> <a href="https://github.com/Imaginea">Imaginea</a></span>
+</br><span class="header3">Native android automation tool with record and replay features</span>
+<a href="https://github.com/Imaginea/bot-bot"  target="_blank"><img class="fork" src="{{ site_url }}/images/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+      </div>
+<div class="main-content">
+    <div class="leftnav">
+	<ol >
+	  <li><a href ="{{ site.baseurl }}/index.html" >Home</a></li>
+	  <li><a href ="{{ site.baseurl }}/pages/main/features.html" >Features</a></li>
+          <li><a href ="{{ site.baseurl }}/pages/server/server.html" >Server</a>
+		<ol>
+		<li><a href ="{{ site.baseurl }}/pages/server/server_installation.html" >Installation</a></li>
+		<li><a href ="{{ site.baseurl }}/pages/server/server_usage.html" >Usage</a></li>
+		<li><a href ="{{ site.baseurl }}/pages/server/server_build.html" >Build It From Source</a></li>
+		</ol>
+	  </li>
+	<li><a href ="{{ site.baseurl }}/pages/recorder/recorder.html" >Recorder</a>
+		<ol>
+		<li><a href ="{{ site.baseurl }}/pages/recorder/recorder_installation.html" >Installation</a></li>
+		</ol>
+	</li>
+	<li><a href ="{{ site.baseurl }}/pages/runner/runner.html" >Runner</a>
+		<ol>
+		<li><a href ="{{ site.baseurl }}/pages/runner/runner_installation.html" >Installation</a></li>
+		<li><a href ="{{ site.baseurl }}/pages/runner/runner_keywords.html" >Supported Keywords</a></li>
+		<li><a href ="{{ site.baseurl }}/pages/runner/runner_datadriven.html" >Data-Driven Tests</a></li>
+		
+		</ol>
+	</li>
+	<li><a href ="{{ site.baseurl }}/pages/main/html_reports.html" >Reports</a></li>
+	<li><a href ="{{ site.baseurl }}/pages/main/releases.html" >Releases</a></li>
+	<li><a href ="{{ site.baseurl }}/pages/main/still_to_come.html" >Still to Come</a></li>
+	<li><a href ="{{ site.baseurl }}/pages/main/support.html" >Support</a></li>
+	<li><a href ="{{ site.baseurl }}/pages/main/download.html" >Download</a></li>
+	<!--  {% for p in site.pages %}
+      <li>
+        <a href="{{ site.baseurl }}{{ p.url }}">
+          {{ p.heading }}
+        </a>
+      </li>
+  {% endfor %}-->
+	<ol>
+    </div>
+    <div class="main-content-ctr">
+      <header>
+	<h1 id='{{ page.title | downcase | replace(' ', '_') }}'>{{ page.heading }}</h1>
+	<p/>
+        <p class="view"><a href="https://github.com/Imaginea/bot-bot">View the Project on GitHub <small>menonvarun/site</small></a></p>
+        <ul>
+          <li><a href="{{site.latestdownload}}" target="_blank">Download <strong>Latest</strong></a></li>
+          <li><a href="https://github.com/Imaginea/bot-bot" target="_blank">View On <strong>GitHub</strong></a></li>
+	  <li><a href="https://groups.google.com/group/bot-bot-users" target="_blank">Have a <strong>Question?</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <div id='content'>
+        {{ content }}
+      </div>
+      </section>
+    </div>
+</div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/Imaginea" target="_blank">Imaginea</a></p>
+      <p>All rights reserved</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+   </div> 
+  </body>
+</html>

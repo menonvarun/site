@@ -1,0 +1,805 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               All methods in suite
+               
+               <b>Bot-bot suite</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">7</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">8</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">88%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">173.127 ms
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"
+                   checked=""></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"
+                   checked=""></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"
+                checked=""></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="test.wordpress.Blog_testVerifyPost_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifyPost_byStatus_failed_FAIL1_details')">testVerifyPost()</a>
+               </td>
+               <td nowrap="true">T16:02:3</td>
+               <td nowrap="true" align="right">22.168 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifyPost_byStatus_failed_FAIL1_exception')">: junit.framework.AssertionFailedError: The text: Hello world! is not found!</a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifyPost_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifyPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifyPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:02:3
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:02:5
+                     </div>
+                     <div>
+                        <b>Duration: </b>22.168 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifyPost_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">junit.framework.AssertionFailedError: The text: Hello world! is not found!
+                        	at junit.framework.Assert.fail(Assert.java:47)
+                        	at org.imaginea.botbot.keywords.BaseKeywordDefinitions.invoker(Unknown Source)
+                        	at org.imaginea.botbot.keywords.RobotiumKeywordDefinition.execute(Unknown Source)
+                        	at org.imaginea.botbot.keywords.KeywordCaller.execute(Unknown Source)
+                        	at org.imaginea.botbot.common.AndroFrameworkExecutor.execute(Unknown Source)
+                        	at org.imaginea.botbot.common.AndroFrameworkExecutor.androExecutor(Unknown Source)
+                        	at test.wordpress.Blog.testVerifyPost(Unknown Source)
+                        	at java.lang.reflect.Method.invokeNative(Native Method)
+                        	at java.lang.reflect.Method.invoke(Method.java:511)
+                        	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+                        	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+                        	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:186)
+                        	at junit.framework.TestCase.runBare(TestCase.java:127)
+                        	at junit.framework.TestResult$1.protect(TestResult.java:106)
+                        	at junit.framework.TestResult.runProtected(TestResult.java:124)
+                        	at junit.framework.TestResult.run(TestResult.java:109)
+                        	at junit.framework.TestCase.run(TestCase.java:118)
+                        	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+                        	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+                        	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:537)
+                        	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1551)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="test.wordpress.Blog_testVerifyFormatInNewPost_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifyFormatInNewPost_byStatus_passed_PASS1_details')">testVerifyFormatInNewPost()</a>
+               </td>
+               <td nowrap="true">T16:02:1</td>
+               <td nowrap="true" align="right">16.204 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifyFormatInNewPost_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifyFormatInNewPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifyFormatInNewPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:02:1
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:02:3
+                     </div>
+                     <div>
+                        <b>Duration: </b>16.204 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.Blog_testCreateNewPost_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testCreateNewPost_byStatus_passed_PASS2_details')">testCreateNewPost()</a>
+               </td>
+               <td nowrap="true">T16:01:0</td>
+               <td nowrap="true" align="right">70.838 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testCreateNewPost_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testCreateNewPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testCreateNewPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:01:0
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:02:1
+                     </div>
+                     <div>
+                        <b>Duration: </b>70.838 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.Blog_testVerifymenu_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifymenu_byStatus_passed_PASS3_details')">testVerifymenu()</a>
+               </td>
+               <td nowrap="true">T16:02:5</td>
+               <td nowrap="true" align="right">9.318 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifymenu_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifymenu
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifymenu
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:02:5
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:0
+                     </div>
+                     <div>
+                        <b>Duration: </b>9.318 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.Blog_testVerifystatusInNewPost_byStatus_passed_PASS4_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifystatusInNewPost_byStatus_passed_PASS4_details')">testVerifystatusInNewPost()</a>
+               </td>
+               <td nowrap="true">T16:03:0</td>
+               <td nowrap="true" align="right">13.663 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifystatusInNewPost_byStatus_passed_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifystatusInNewPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifystatusInNewPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:0
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:1
+                     </div>
+                     <div>
+                        <b>Duration: </b>13.663 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.datadriven.CreateNewPost_CreateNewPost3_byStatus_passed_PASS5_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.datadriven.CreateNewPost_CreateNewPost3_byStatus_passed_PASS5_details')">CreateNewPost3()</a>
+               </td>
+               <td nowrap="true">T16:03:5</td>
+               <td nowrap="true" align="right">20.959 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.datadriven.CreateNewPost_CreateNewPost3_byStatus_passed_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>CreateNewPost3
+                     </div>
+                     <div>
+                        <b>Signature: </b>CreateNewPost3
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:5
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:04:2
+                     </div>
+                     <div>
+                        <b>Duration: </b>20.959 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.datadriven.CreateNewPost_testcasename2_byStatus_passed_PASS6_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.datadriven.CreateNewPost_testcasename2_byStatus_passed_PASS6_details')">testcasename2()</a>
+               </td>
+               <td nowrap="true">T16:03:3</td>
+               <td nowrap="true" align="right">19.933 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.datadriven.CreateNewPost_testcasename2_byStatus_passed_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testcasename2
+                     </div>
+                     <div>
+                        <b>Signature: </b>testcasename2
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:3
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:5
+                     </div>
+                     <div>
+                        <b>Duration: </b>19.933 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.datadriven.CreateNewPost_testcasename1_byStatus_passed_PASS7_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.datadriven.CreateNewPost_testcasename1_byStatus_passed_PASS7_details')">testcasename1()</a>
+               </td>
+               <td nowrap="true">T16:03:1</td>
+               <td nowrap="true" align="right">20.813 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.datadriven.CreateNewPost_testcasename1_byStatus_passed_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testcasename1
+                     </div>
+                     <div>
+                        <b>Signature: </b>testcasename1
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:1
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:3
+                     </div>
+                     <div>
+                        <b>Duration: </b>20.813 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">test.wordpress.Blog</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="test.wordpress.Blog_testCreateNewPost_byClass_PASS1_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testCreateNewPost_byClass_PASS1_details')">testCreateNewPost()</a>
+               </td>
+               <td nowrap="true">T16:01:0</td>
+               <td nowrap="true" align="right">70.838 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testCreateNewPost_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testCreateNewPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testCreateNewPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:01:0
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:02:1
+                     </div>
+                     <div>
+                        <b>Duration: </b>70.838 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.Blog_testVerifyFormatInNewPost_byClass_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifyFormatInNewPost_byClass_PASS2_details')">testVerifyFormatInNewPost()</a>
+               </td>
+               <td nowrap="true">T16:02:1</td>
+               <td nowrap="true" align="right">16.204 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifyFormatInNewPost_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifyFormatInNewPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifyFormatInNewPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:02:1
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:02:3
+                     </div>
+                     <div>
+                        <b>Duration: </b>16.204 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.Blog_testVerifyPost_byClass_FAIL3_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifyPost_byClass_FAIL3_details')">testVerifyPost()</a>
+               </td>
+               <td nowrap="true">T16:02:3</td>
+               <td nowrap="true" align="right">22.168 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifyPost_byClass_FAIL3_exception')">: junit.framework.AssertionFailedError: The text: Hello world! is not found!</a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifyPost_byClass_FAIL3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifyPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifyPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:02:3
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:02:5
+                     </div>
+                     <div>
+                        <b>Duration: </b>22.168 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifyPost_byClass_FAIL3_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">junit.framework.AssertionFailedError: The text: Hello world! is not found!
+                        	at junit.framework.Assert.fail(Assert.java:47)
+                        	at org.imaginea.botbot.keywords.BaseKeywordDefinitions.invoker(Unknown Source)
+                        	at org.imaginea.botbot.keywords.RobotiumKeywordDefinition.execute(Unknown Source)
+                        	at org.imaginea.botbot.keywords.KeywordCaller.execute(Unknown Source)
+                        	at org.imaginea.botbot.common.AndroFrameworkExecutor.execute(Unknown Source)
+                        	at org.imaginea.botbot.common.AndroFrameworkExecutor.androExecutor(Unknown Source)
+                        	at test.wordpress.Blog.testVerifyPost(Unknown Source)
+                        	at java.lang.reflect.Method.invokeNative(Native Method)
+                        	at java.lang.reflect.Method.invoke(Method.java:511)
+                        	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+                        	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+                        	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:186)
+                        	at junit.framework.TestCase.runBare(TestCase.java:127)
+                        	at junit.framework.TestResult$1.protect(TestResult.java:106)
+                        	at junit.framework.TestResult.runProtected(TestResult.java:124)
+                        	at junit.framework.TestResult.run(TestResult.java:109)
+                        	at junit.framework.TestCase.run(TestCase.java:118)
+                        	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+                        	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+                        	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:537)
+                        	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1551)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="test.wordpress.Blog_testVerifymenu_byClass_PASS4_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifymenu_byClass_PASS4_details')">testVerifymenu()</a>
+               </td>
+               <td nowrap="true">T16:02:5</td>
+               <td nowrap="true" align="right">9.318 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifymenu_byClass_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifymenu
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifymenu
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:02:5
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:0
+                     </div>
+                     <div>
+                        <b>Duration: </b>9.318 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.Blog_testVerifystatusInNewPost_byClass_PASS5_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.Blog_testVerifystatusInNewPost_byClass_PASS5_details')">testVerifystatusInNewPost()</a>
+               </td>
+               <td nowrap="true">T16:03:0</td>
+               <td nowrap="true" align="right">13.663 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.Blog_testVerifystatusInNewPost_byClass_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testVerifystatusInNewPost
+                     </div>
+                     <div>
+                        <b>Signature: </b>testVerifystatusInNewPost
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:0
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:1
+                     </div>
+                     <div>
+                        <b>Duration: </b>13.663 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">test.wordpress.datadriven.CreateNewPost</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="test.wordpress.datadriven.CreateNewPost_testcasename1_byClass_PASS1_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.datadriven.CreateNewPost_testcasename1_byClass_PASS1_details')">testcasename1()</a>
+               </td>
+               <td nowrap="true">T16:03:1</td>
+               <td nowrap="true" align="right">20.813 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.datadriven.CreateNewPost_testcasename1_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testcasename1
+                     </div>
+                     <div>
+                        <b>Signature: </b>testcasename1
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:1
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:3
+                     </div>
+                     <div>
+                        <b>Duration: </b>20.813 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.datadriven.CreateNewPost_testcasename2_byClass_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.datadriven.CreateNewPost_testcasename2_byClass_PASS2_details')">testcasename2()</a>
+               </td>
+               <td nowrap="true">T16:03:3</td>
+               <td nowrap="true" align="right">19.933 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.datadriven.CreateNewPost_testcasename2_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testcasename2
+                     </div>
+                     <div>
+                        <b>Signature: </b>testcasename2
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:3
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:03:5
+                     </div>
+                     <div>
+                        <b>Duration: </b>19.933 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="test.wordpress.datadriven.CreateNewPost_CreateNewPost3_byClass_PASS3_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('test.wordpress.datadriven.CreateNewPost_CreateNewPost3_byClass_PASS3_details')">CreateNewPost3()</a>
+               </td>
+               <td nowrap="true">T16:03:5</td>
+               <td nowrap="true" align="right">20.959 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="test.wordpress.datadriven.CreateNewPost_CreateNewPost3_byClass_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>CreateNewPost3
+                     </div>
+                     <div>
+                        <b>Signature: </b>CreateNewPost3
+                     </div>
+                     <div>
+                        <b>Start time: </b>T16:03:5
+                     </div>
+                     <div>
+                        <b>End time: </b>T16:04:2
+                     </div>
+                     <div>
+                        <b>Duration: </b>20.959 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>
